@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(image/do\ more.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.menu-bar{
+  background-color: #0c3823;
+  text-align: center;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.active, .menu-bar ul li:hover{
+  background: #30694b;
+  border-radius: 3px;
+}
+.sub-menu-1{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -39px;
+  background: #0c3823;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 0.5px #fff solid;
+  background: transparent;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: #358856;
+}
+.logo{
+  display: block;
+  padding-top: 25px;
+  padding-right: 80px;
+  padding-bottom: 25px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.first-letter{
+  color: aquamarine;
+}
+
+.headerinfo{
+  background: #0c3823;
+  margin-top: 170px;
+  padding: 20px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+h2{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+h1{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  line-height: 2rem;
+  word-spacing: 0.1rem;
+}
+.btn{
+  padding: 8px 50px;
+  background: black;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 200px;
+}
+.btn:hover{
+  color: aquamarine;
+}
